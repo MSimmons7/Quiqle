@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F914D84C20BF5D2400E196B6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F914D84B20BF5D2400E196B6 /* HomeVC.swift */; };
 		F93B64BA20BDD335001061F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B64B920BDD335001061F3 /* AppDelegate.swift */; };
 		F93B64BC20BDD335001061F3 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B64BB20BDD335001061F3 /* Intro.swift */; };
 		F93B64BF20BDD335001061F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F93B64BD20BDD335001061F3 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F914D84A20BF585B00E196B6 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home.png; path = ../../../../Downloads/Home.png; sourceTree = "<group>"; };
+		F914D84B20BF5D2400E196B6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F93B64B620BDD335001061F3 /* Quiqle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiqle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F93B64B920BDD335001061F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F93B64BB20BDD335001061F3 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
@@ -62,7 +65,9 @@
 				F93B64B920BDD335001061F3 /* AppDelegate.swift */,
 				F93B64BB20BDD335001061F3 /* Intro.swift */,
 				F93B64D120BDEC84001061F3 /* LoginVC.swift */,
+				F914D84B20BF5D2400E196B6 /* HomeVC.swift */,
 				F93B64BD20BDD335001061F3 /* Main.storyboard */,
+				F914D84A20BF585B00E196B6 /* Home.png */,
 				F93B64C020BDD336001061F3 /* Assets.xcassets */,
 				F93B64C220BDD336001061F3 /* LaunchScreen.storyboard */,
 				F93B64C520BDD336001061F3 /* Info.plist */,
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F93B64BC20BDD335001061F3 /* Intro.swift in Sources */,
+				F914D84C20BF5D2400E196B6 /* HomeVC.swift in Sources */,
 				F93B64CD20BDDE5F001061F3 /* Extensions.swift in Sources */,
 				F93B64D220BDEC84001061F3 /* LoginVC.swift in Sources */,
 				F93B64BA20BDD335001061F3 /* AppDelegate.swift in Sources */,
