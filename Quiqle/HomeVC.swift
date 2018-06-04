@@ -10,6 +10,7 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var reminderTable: UITableView!
     @IBOutlet weak var table: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,14 @@ class HomeVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func changeTab(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            table.isHidden = true
+        }
+        else {
+            table.isHidden = false
+        }
+    }
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {

@@ -50,7 +50,7 @@ extension UIView {
 extension UIViewController {
     
     @IBAction func goback(_ sender: UIButton)  {
-        dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
