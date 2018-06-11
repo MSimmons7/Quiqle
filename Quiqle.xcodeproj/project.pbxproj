@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EEA251D87F023E47C577E98 /* Pods_Quiqle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6AB00CD49733466979B564 /* Pods_Quiqle.framework */; };
 		F914D84C20BF5D2400E196B6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F914D84B20BF5D2400E196B6 /* HomeVC.swift */; };
 		F93B64BA20BDD335001061F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B64B920BDD335001061F3 /* AppDelegate.swift */; };
 		F93B64BC20BDD335001061F3 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B64BB20BDD335001061F3 /* Intro.swift */; };
@@ -15,9 +16,19 @@
 		F93B64C420BDD336001061F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F93B64C220BDD336001061F3 /* LaunchScreen.storyboard */; };
 		F93B64CD20BDDE5F001061F3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B64CC20BDDE5F001061F3 /* Extensions.swift */; };
 		F93B64D220BDEC84001061F3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B64D120BDEC84001061F3 /* LoginVC.swift */; };
+		F93F3CEF20CD29C30017D469 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93F3CED20CD29C20017D469 /* Constants.swift */; };
+		F93F3CF020CD29C30017D469 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93F3CEE20CD29C20017D469 /* FirebaseHelper.swift */; };
+		F93F3CF320CD2B680017D469 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93F3CF220CD2B680017D469 /* Utilities.swift */; };
+		F93F3CF920CD5B9C0017D469 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93F3CF820CD5B9C0017D469 /* GroupModel.swift */; };
+		F9483BD620CD920B0049A4CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9483BD520CD920B0049A4CE /* GoogleService-Info.plist */; };
+		F9483BD920CD95900049A4CE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9483BD720CD95900049A4CE /* Post.swift */; };
+		F9483BDA20CD95900049A4CE /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9483BD820CD95900049A4CE /* UserEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52D85D7AA8A67320371C84A1 /* Pods-Quiqle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiqle.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quiqle/Pods-Quiqle.release.xcconfig"; sourceTree = "<group>"; };
+		7C6AB00CD49733466979B564 /* Pods_Quiqle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quiqle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83900947A7C0C708D1158AF /* Pods-Quiqle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiqle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quiqle/Pods-Quiqle.debug.xcconfig"; sourceTree = "<group>"; };
 		F914D84B20BF5D2400E196B6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F93B64B620BDD335001061F3 /* Quiqle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiqle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F93B64B920BDD335001061F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +39,13 @@
 		F93B64C520BDD336001061F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F93B64CC20BDDE5F001061F3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F93B64D120BDEC84001061F3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F93F3CED20CD29C20017D469 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F93F3CEE20CD29C20017D469 /* FirebaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		F93F3CF220CD2B680017D469 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		F93F3CF820CD5B9C0017D469 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		F9483BD520CD920B0049A4CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F9483BD720CD95900049A4CE /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F9483BD820CD95900049A4CE /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EEA251D87F023E47C577E98 /* Pods_Quiqle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06A043B3C4BB7AF98F71F6C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C6AB00CD49733466979B564 /* Pods_Quiqle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5BA2B51804438A17AFA7652 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B83900947A7C0C708D1158AF /* Pods-Quiqle.debug.xcconfig */,
+				52D85D7AA8A67320371C84A1 /* Pods-Quiqle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F93B64AD20BDD335001061F3 = {
 			isa = PBXGroup;
 			children = (
 				F93B64B820BDD335001061F3 /* Quiqle */,
 				F93B64B720BDD335001061F3 /* Products */,
+				B5BA2B51804438A17AFA7652 /* Pods */,
+				06A043B3C4BB7AF98F71F6C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +98,7 @@
 		F93B64B820BDD335001061F3 /* Quiqle */ = {
 			isa = PBXGroup;
 			children = (
+				F93F3CF120CD29DC0017D469 /* Models */,
 				F93B64CB20BDDE48001061F3 /* Utilities */,
 				F93B64B920BDD335001061F3 /* AppDelegate.swift */,
 				F93B64BB20BDD335001061F3 /* Intro.swift */,
@@ -69,6 +108,7 @@
 				F93B64C020BDD336001061F3 /* Assets.xcassets */,
 				F93B64C220BDD336001061F3 /* LaunchScreen.storyboard */,
 				F93B64C520BDD336001061F3 /* Info.plist */,
+				F9483BD520CD920B0049A4CE /* GoogleService-Info.plist */,
 			);
 			path = Quiqle;
 			sourceTree = "<group>";
@@ -77,8 +117,21 @@
 			isa = PBXGroup;
 			children = (
 				F93B64CC20BDDE5F001061F3 /* Extensions.swift */,
+				F93F3CED20CD29C20017D469 /* Constants.swift */,
+				F93F3CEE20CD29C20017D469 /* FirebaseHelper.swift */,
+				F93F3CF220CD2B680017D469 /* Utilities.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F93F3CF120CD29DC0017D469 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F93F3CF820CD5B9C0017D469 /* GroupModel.swift */,
+				F9483BD720CD95900049A4CE /* Post.swift */,
+				F9483BD820CD95900049A4CE /* UserEntity.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F93B64C820BDD336001061F3 /* Build configuration list for PBXNativeTarget "Quiqle" */;
 			buildPhases = (
+				E0B717764FCA4BC7DB1A70E8 /* [CP] Check Pods Manifest.lock */,
 				F93B64B220BDD335001061F3 /* Sources */,
 				F93B64B320BDD335001061F3 /* Frameworks */,
 				F93B64B420BDD335001061F3 /* Resources */,
+				9677090EBDD4C61A7EAC58ED /* [CP] Embed Pods Frameworks */,
+				D6617D356A2E6843512A77E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F93B64C420BDD336001061F3 /* LaunchScreen.storyboard in Resources */,
+				F9483BD620CD920B0049A4CE /* GoogleService-Info.plist in Resources */,
 				F93B64C120BDD336001061F3 /* Assets.xcassets in Resources */,
 				F93B64BF20BDD335001061F3 /* Main.storyboard in Resources */,
 			);
@@ -147,16 +204,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9677090EBDD4C61A7EAC58ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quiqle/Pods-Quiqle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BSModalPickerView/BSModalPickerView.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSModalPickerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quiqle/Pods-Quiqle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6617D356A2E6843512A77E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quiqle/Pods-Quiqle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0B717764FCA4BC7DB1A70E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quiqle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F93B64B220BDD335001061F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9483BDA20CD95900049A4CE /* UserEntity.swift in Sources */,
+				F93F3CF020CD29C30017D469 /* FirebaseHelper.swift in Sources */,
 				F93B64BC20BDD335001061F3 /* Intro.swift in Sources */,
+				F93F3CF920CD5B9C0017D469 /* GroupModel.swift in Sources */,
 				F914D84C20BF5D2400E196B6 /* HomeVC.swift in Sources */,
 				F93B64CD20BDDE5F001061F3 /* Extensions.swift in Sources */,
 				F93B64D220BDEC84001061F3 /* LoginVC.swift in Sources */,
 				F93B64BA20BDD335001061F3 /* AppDelegate.swift in Sources */,
+				F93F3CF320CD2B680017D469 /* Utilities.swift in Sources */,
+				F93F3CEF20CD29C30017D469 /* Constants.swift in Sources */,
+				F9483BD920CD95900049A4CE /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +429,7 @@
 		};
 		F93B64C920BDD336001061F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B83900947A7C0C708D1158AF /* Pods-Quiqle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Dennis Duncan (L9D8AX3QKA)";
@@ -319,6 +451,7 @@
 		};
 		F93B64CA20BDD336001061F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52D85D7AA8A67320371C84A1 /* Pods-Quiqle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Dennis Duncan (L9D8AX3QKA)";
