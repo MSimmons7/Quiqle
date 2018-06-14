@@ -17,6 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        if let profile = Utilities.getProfile() {
+            let credentials = EmailAuthProvider.credential(withEmail: profile["email"]!, password: profile["password"]!)
+            Auth.auth().signIn(with: credentials, completion: { (user, error) in
+                if error != nil {
+                    print("logged in")
+                }
+            })
+            
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeController")
+            
+            self.window?.rootViewController = vc
+        }
         return true
     }
 

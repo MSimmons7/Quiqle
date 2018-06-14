@@ -23,6 +23,9 @@
 		F9483BD620CD920B0049A4CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9483BD520CD920B0049A4CE /* GoogleService-Info.plist */; };
 		F9483BD920CD95900049A4CE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9483BD720CD95900049A4CE /* Post.swift */; };
 		F9483BDA20CD95900049A4CE /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9483BD820CD95900049A4CE /* UserEntity.swift */; };
+		F9BBB5EF20D2879E00966652 /* GroupDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BBB5EE20D2879E00966652 /* GroupDetailVC.swift */; };
+		F9BBB5F120D288DC00966652 /* StartGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BBB5F020D288DC00966652 /* StartGroup.swift */; };
+		F9BBB5F320D28BA800966652 /* GenericCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BBB5F220D28BA800966652 /* GenericCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		F9483BD520CD920B0049A4CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F9483BD720CD95900049A4CE /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		F9483BD820CD95900049A4CE /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		F9BBB5EE20D2879E00966652 /* GroupDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailVC.swift; sourceTree = "<group>"; };
+		F9BBB5F020D288DC00966652 /* StartGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGroup.swift; sourceTree = "<group>"; };
+		F9BBB5F220D28BA800966652 /* GenericCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +104,15 @@
 		F93B64B820BDD335001061F3 /* Quiqle */ = {
 			isa = PBXGroup;
 			children = (
+				F9BBB5F420D28BAE00966652 /* Views */,
 				F93F3CF120CD29DC0017D469 /* Models */,
 				F93B64CB20BDDE48001061F3 /* Utilities */,
 				F93B64B920BDD335001061F3 /* AppDelegate.swift */,
 				F93B64BB20BDD335001061F3 /* Intro.swift */,
 				F93B64D120BDEC84001061F3 /* LoginVC.swift */,
 				F914D84B20BF5D2400E196B6 /* HomeVC.swift */,
+				F9BBB5F020D288DC00966652 /* StartGroup.swift */,
+				F9BBB5EE20D2879E00966652 /* GroupDetailVC.swift */,
 				F93B64BD20BDD335001061F3 /* Main.storyboard */,
 				F93B64C020BDD336001061F3 /* Assets.xcassets */,
 				F93B64C220BDD336001061F3 /* LaunchScreen.storyboard */,
@@ -132,6 +141,15 @@
 				F9483BD820CD95900049A4CE /* UserEntity.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F9BBB5F420D28BAE00966652 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9BBB5F220D28BA800966652 /* GenericCell.swift */,
+			);
+			name = Views;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9BBB5EF20D2879E00966652 /* GroupDetailVC.swift in Sources */,
+				F9BBB5F120D288DC00966652 /* StartGroup.swift in Sources */,
 				F9483BDA20CD95900049A4CE /* UserEntity.swift in Sources */,
 				F93F3CF020CD29C30017D469 /* FirebaseHelper.swift in Sources */,
 				F93B64BC20BDD335001061F3 /* Intro.swift in Sources */,
@@ -288,6 +308,7 @@
 				F93F3CF320CD2B680017D469 /* Utilities.swift in Sources */,
 				F93F3CEF20CD29C30017D469 /* Constants.swift in Sources */,
 				F9483BD920CD95900049A4CE /* Post.swift in Sources */,
+				F9BBB5F320D28BA800966652 /* GenericCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,7 @@ class Intro: UIViewController {
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0.0
         layout.minimumInteritemSpacing = 0.0
-        layout.itemSize = collection.frame.size
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.size.width, height: collection.frame.size.height) 
         collection.setCollectionViewLayout(layout, animated: false)
         
     }

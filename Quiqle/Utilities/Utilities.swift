@@ -155,7 +155,7 @@ class Utilities: NSObject {
     public func updateProducts(completion: (() -> Swift.Void)? = nil)  {
         
         self.updateUsers {
-            FirebaseHelper.shared.dbref.child("trips").observeSingleEvent(of: .value, with: { (snapshot) in
+            FirebaseHelper.shared.dbref.child("groups").observeSingleEvent(of: .value, with: { (snapshot) in
                 if let snapshots = snapshot.children.allObjects as? [DataSnapshot] {
                     
                     self.productsArray = []
