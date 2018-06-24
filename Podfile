@@ -14,5 +14,6 @@ target 'Quiqle' do
   pod 'AFNetworking', '~> 3.0'
   pod 'SVProgressHUD'
   pod 'BSModalPickerView'
+  pod 'LocationPickerViewController'
 
 end

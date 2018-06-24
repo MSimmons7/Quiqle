@@ -8,12 +8,12 @@
 
 import UIKit
 import Firebase
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
@@ -30,6 +30,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = vc
         }
         return true
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print("got token \(deviceToken)")
+        Messaging.messaging().apnsToken = deviceToken
+        
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("notification token error \(error)")
+    }
+    
+    func application(_ application: UIApplication, didRegister notificationSettings: UIUserNotificationSettings) {
+        application.registerForRemoteNotifications()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -55,5 +69,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    //This is the two delegate method to get the notification in iOS 10..
+    //First for foreground
+    @available(iOS 10.0, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (_ options:UNNotificationPresentationOptions) -> Void) {
+        print("Handle push from foreground")
+        // custom code to handle push while app is in the foreground
+        //        [AnyHashable("google.c.a.c_l"): hello, AnyHashable("google.c.a.e"): 1, AnyHashable("google.c.a.ts"): 1528896267, AnyHashable("google.c.a.udt"): 0, AnyHashable("gcm.n.e"): 1, AnyHashable("aps"): {
+        //        alert = "test notification";
+        //    }, AnyHashable("google.c.a.c_id"): 6107824521360483703, AnyHashable("gcm.message_id"): 0:1528896268007243%743cea98743cea98]
+        print("\(notification.request.content.userInfo)")
+    }
+    //Second for background and close
+    @available(iOS 10.0, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response:UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("Handle push from background or closed")
+        // if you set a member variable in didReceiveRemoteNotification, you will know if this is from closed or background
+        print("\(response.notification.request.content.userInfo)")
+    }
 }
 

@@ -12,6 +12,7 @@ class UserEntity {
     var id = ""
     var name = ""
     var email = ""
+    var invited: Bool = false
     
     public init(id: String, dict: Dictionary<String, String>) {
         self.id = id

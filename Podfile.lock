@@ -62,6 +62,7 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - GTMSessionFetcher/Core (1.1.15)
   - leveldb-library (1.20)
+  - LocationPickerViewController (3.3)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -78,6 +79,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Messaging
   - Firebase/Storage
+  - LocationPickerViewController
   - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -94,10 +96,11 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  LocationPickerViewController: 8190e6bc3562e5fe5c52d92b23786f634b6de42c
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: f5fe98607ed5767e98297a8097023f6f56d96c44
+PODFILE CHECKSUM: c31536e9b553d283e800401778dd6b6630efb10f
 
 COCOAPODS: 1.4.0

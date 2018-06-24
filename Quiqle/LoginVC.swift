@@ -11,6 +11,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 import SVProgressHUD
+import UserNotifications
 
 class LoginVC: BaseVC {
     
@@ -142,9 +143,27 @@ class LoginVC: BaseVC {
             }
             let user = Auth.auth().currentUser
             Utilities.saveProfile(user!, password: self.password.text)
+            self.registerNotifications()
             self.performSegue(withIdentifier: "goToHomeSegue", sender: self)
             //print(user)
         })
+    }
+    
+    func registerNotifications() {
+        let application = UIApplication.shared
+        DispatchQueue.main.async {
+            if #available(iOS 10.0, *) {
+                // For iOS 10 display notification (sent via APNS)
+                UNUserNotificationCenter.current().delegate = application.delegate as! AppDelegate
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { (granted, error) in
+                })
+            } else {
+                let settings: UIUserNotificationSettings =
+                    UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+                application.registerUserNotificationSettings(settings)
+            }
+            return
+        }
     }
 }
 

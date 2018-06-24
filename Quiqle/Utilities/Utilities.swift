@@ -19,6 +19,7 @@ class Utilities: NSObject {
     
     //var categoriesArray: Array<Category>? = []
     var productsArray: [Post] = []
+    var invitationsArray: [Invitation] = []
     var usersArray: [UserEntity] = []
     
     static let shared = Utilities()
@@ -84,7 +85,7 @@ class Utilities: NSObject {
     
     public static func isEmpty(_ string:String) -> Bool {
 
-        if (string.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines).characters.count == 0 ) {
+        if (string.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines).count == 0 ) {
             return true
         }
         
@@ -152,6 +153,39 @@ class Utilities: NSObject {
     
     }
     
+    public func updateInvitations(completion: (() -> Swift.Void)? = nil)  {
+        
+        self.updateUsers {
+            self.updateProducts(completion: {
+                FirebaseHelper.shared.dbref.child("invitations").observeSingleEvent(of: .value, with: { (snapshot) in
+                    if let snapshots = snapshot.children.allObjects as? [DataSnapshot] {
+                        
+                        self.invitationsArray = []
+                        for snap in snapshots {
+                            if let postDict = snap.value as? Dictionary<String, String> {
+                                let key = snap.key
+                                let form = Invitation(id: key, dict: postDict)
+                                if form.receiver.id == Auth.auth().currentUser?.uid {
+                                    self.invitationsArray.append(form)
+                                }
+                                
+                            }
+                        }
+                    }
+                    if completion != nil {
+                        completion!()
+                    }
+                    
+                    
+                }) { (error) in
+                    print(error.localizedDescription)
+                }
+            })
+            
+        } // users closed
+        
+    }
+    
     public func updateProducts(completion: (() -> Swift.Void)? = nil)  {
         
         self.updateUsers {
@@ -167,8 +201,6 @@ class Utilities: NSObject {
                             self.productsArray.append(form)
                         }
                     }
-                    
-                    
                 }
                 if completion != nil {
                     completion!()
