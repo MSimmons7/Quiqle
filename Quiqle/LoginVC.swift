@@ -119,6 +119,7 @@ class LoginVC: BaseVC {
                 Utilities.showAlert(self, message: "Check your email for new password", alertTitle: "Success")
             }
         }))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func loginTapped(_ sender: Any) {
